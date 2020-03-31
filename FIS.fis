@@ -1,0 +1,58 @@
+[System]
+Name='FIS'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=0
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='input1'
+Range=[0 1]
+NumMFs=9
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+MF4='mf4':'trimf',[-0.2 3.469e-18 0.2]
+MF5='mf5':'trimf',[0 0.2 0.4]
+MF6='mf6':'trimf',[0.2 0.4 0.6]
+MF7='mf7':'trimf',[0.4 0.6 0.8]
+MF8='mf8':'trimf',[0.6 0.8 1]
+MF9='mf9':'trimf',[0.8 1 1.2]
+
+[Input2]
+Name='input2'
+Range=[0 1]
+NumMFs=9
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+MF4='mf4':'trimf',[-0.2 3.469e-18 0.2]
+MF5='mf5':'trimf',[0 0.2 0.4]
+MF6='mf6':'trimf',[0.2 0.4 0.6]
+MF7='mf7':'trimf',[0.4 0.6 0.8]
+MF8='mf8':'trimf',[0.6 0.8 1]
+MF9='mf9':'trimf',[0.8 1 1.2]
+
+[Output1]
+Name='output1'
+Range=[0 1]
+NumMFs=11
+MF1='mf1':'trimf',[-0.4 0 0.4]
+MF2='mf2':'trimf',[0.1 0.5 0.9]
+MF3='mf3':'trimf',[0.6 1 1.4]
+MF4='mf4':'trimf',[-0.1429 -4.337e-18 0.1429]
+MF5='mf5':'trimf',[0 0.1429 0.2857]
+MF6='mf6':'trimf',[0.1429 0.2857 0.4286]
+MF7='mf7':'trimf',[0.2857 0.4286 0.5714]
+MF8='mf8':'trimf',[0.4286 0.5714 0.7143]
+MF9='mf9':'trimf',[0.5714 0.7143 0.8571]
+MF10='mf10':'trimf',[0.7143 0.8571 1]
+MF11='mf11':'trimf',[0.8571 1 1.143]
+
+[Rules]
